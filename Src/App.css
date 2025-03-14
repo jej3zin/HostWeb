@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', 'Arial Narrow Bold', sans-serif;
+}
+:root {
+  --Bg: #222;
+  --Bg-Body: #181818;
+  --Col: #eee;
+  --Kustom: #ec7e00;
+  --Kustom-Shadow: rgba(236, 126, 0, 0.5);
+  --Ani: 0.3s ease-in-out all;
+}
+html,
+body {
+  height: 100%;
+  background-color: var(--Bg-Body);
+}
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: var(--Bg-Body);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--Kustom);
+}
+::selection {
+  background-color: var(--Kustom-Shadow);
+  color: var(--Backg);
+}
+/* MAIN */
+.main {
+  padding: 3rem;
+  position: relative;
+}
+.Sect-1 {
+  display: flex;
+  flex-direction: column;
+}
+.space-title {
+  margin: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Sect-title {
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--Col);
+}
+.bar-title {
+  height: 0.1rem;
+  width: 2rem;
+  margin: 0 1rem;
+  padding: 0.1rem;
+  border-radius: 1rem;
+  background: var(--Kustom);
+}
+/* Cards */
+.Card-Space {
+  color: var(--Col);
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.Card {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1em;
+  border-radius: 1rem;
+  background: var(--Bg);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0.7rem 1rem -3px var(--Kustom-Shadow);
+}
+.Card-Title {
+  font-size: 1.8em;
+  padding-bottom: 0.3em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-bottom: 0.1rem solid var(--Kustom);
+}
+.Card-Text {
+  letter-spacing: 1px;
+}
+.Card-Price {
+  font-size: 2em;
+  font-weight: 500;
+}
+.Card-ul {
+  margin-left: 1rem;
+  line-height: 1.7;
+  flex: 1;
+}
+.Card-List::marker {
+  color: var(--Kustom);
+}
+.Card-BTN {
+  padding: 1rem 0.7rem;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--Col);
+  border-radius: 1rem;
+  border: 2px solid var(--Kustom);
+  transition: var(--Ani);
+  &:hover {
+    background: var(--Kustom);
+    box-shadow: 0 0.5rem 1.4rem -6px var(--Kustom-Shadow);
+  }
+}
+@media only screen and (max-device-width: 770px) {
+  .Card-Space {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media only screen and (max-device-width: 430px) {
+  .main {
+    padding: 2rem;
+  }
+  .Card-Space {
+    grid-template-columns: 1fr;
+  }
+  .Sect-title {
+    font-size: 1.4rem;
+  }
+  .Card-Title,
+  .Card-Price {
+    font-size: 1.3rem;
+  }
+}

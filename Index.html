@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HostWeb | Prince</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jej3zin" />
+    <meta name="Description" content="página para mudança de plano" />
+    <meta name="keywords" content="Html, página, plano, basic, pro, premium" />
+    <link rel="icon" href="./Asset/Rocket.png" />
+    <link rel="stylesheet" href="./Src/App.css" />
+    <link rel="stylesheet" href="./Layout/Header/Header.css" />
+    <link rel="stylesheet" href="./Layout/Footer/Footer.css" />
+  </head>
+  <body>
+    <header class="head">
+      <a href="Index.html" class="Box-logo">
+        <img class="logo" src="./Asset/Rocket.png" alt="Logo da HostWeb" />
+        <h1 class="title">HostWeb</h1>
+      </a>
+
+      <nav class="menu">
+        <button onclick="ToggleBTN()" class="menu-btn"><ion-icon class="btn-icon" name="menu-outline"></ion-icon></button>
+        <div id="menuDrop" class="menuDrop-content">
+          <a class="menu-a" href="#">Home</a>
+          <a class="menu-a" href="#">Plans</a>
+          <a class="menu-a" href="#">Support</a>
+          <a class="menu-a" href="#">Contact</a>
+        </div>
+
+        <ul class="menu-ul">
+          <li class="menu-li"><a class="menu-a" href="#">Home</a></li>
+          <li class="menu-li">
+            <a class="menu-a active" href="Index.html">Plans</a>
+          </li>
+          <li class="menu-li"><a class="menu-a" href="#">Support</a></li>
+          <li class="menu-li"><a class="menu-a" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="Sect-1">
+        <div class="space-title">
+          <span class="bar-title"></span>
+          <h1 class="Sect-title">Choose your plan</h1>
+          <span class="bar-title"></span>
+        </div>
+        
+        <div class="Card-Space">
+          <article class="Card">
+            <h2 class="Card-Title">Basic</h2>
+            <p class="Card-Text"><span class="Card-Price">3.95</span> /mês</p>
+
+            <ul class="Card-ul">
+              <li class="Card-List">1 Website</li>
+              <li class="Card-List">1GB Storage</li>
+              <li class="Card-List">10GB Transfer</li>
+            </ul>
+
+             <a href="#" class="Card-BTN">Subscribe Now!</a>
+          </article>
+
+          <article class="Card">
+            <h2 class="Card-Title">Pro</h2>
+            <p class="Card-Text"><span class="Card-Price">7.95</span> /mês</p>
+
+            <ul class="Card-ul">
+              <li class="Card-List">5 Website</li>
+              <li class="Card-List">3GB Storage</li>
+              <li class="Card-List">10GB Transfer</li>
+              <li class="Card-List">Unlimited Transfer</li>
+              <li class="Card-List">10h Monthly Support</li>
+            </ul>
+
+             <a href="#" class="Card-BTN">Subscribe Now!</a>
+          </article>
+
+          <article class="Card">
+            <h2 class="Card-Title">Premium</h2>
+            <p class="Card-Text"><span class="Card-Price">13.95</span> /mês</p>
+
+            <ul class="Card-ul">
+              <li class="Card-List">10 Website</li>
+              <li class="Card-List">30GB Storage</li>
+              <li class="Card-List">Unlimited Transfer</li>
+              <li class="Card-List">Unlimited Transfer</li>
+              <li class="Card-List">30h Monthly Support</li>
+              <li class="Card-List">Personalized Email</li>
+            </ul>
+
+             <a href="#" class="Card-BTN">Subscribe Now!</a>
+          </article>
+
+        </div>
+      </section>
+      </div>
+    </main>
+
+    <footer class="foot">
+      <div class="Box">
+        <a href="Index.html" class="Box-logo">
+          <img class="logo" src="./Asset/Rocket.png" alt="Logo da HostWeb" />
+          <h1 class="title">HostWeb</h1>
+        </a>
+
+        <span class="line"></span>
+
+        <ul class="social-ul">
+          <li>
+            <a href="https://github.com/jej3zin" class="social"
+              ><ion-icon class="foot-icon" name="logo-github"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <p class="foot-txt">&copy; 2025 by Jej3zin</p>
+    </footer>
+
+    <script src="./Src/App.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

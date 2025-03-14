@@ -1,0 +1,43 @@
+.foot {
+  margin-top: 2rem;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--Bg);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line {
+  height: 2rem;
+  width: 0.1rem;
+  margin: 1rem;
+  padding: 0.01rem;
+  background: var(--Col);
+}
+.social-ul {
+  display: flex;
+  list-style: none;
+}
+.social {
+  color: var(--Col);
+  display: flex;
+  transition: var(--Ani);
+  &:hover {
+    color: var(--Kustom);
+  }
+}
+.foot-icon {
+  font-size: 2rem;
+}
+.foot-txt {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--Col);
+}
